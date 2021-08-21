@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog library</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Blog library</h1>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-map'></i></span>
+                    <span class="title">Asian Desk</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-map'></i></span>
+                    <span class="title">Middleast Desk</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-map'></i></span>
+                    <span class="title">European Desk</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-map'></i></span>
+                    <span class="title">Oceania Desk</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-map'></i></span>
+                    <span class="title">American Desk</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-time'></i></span>
+                    <span class="title">Time</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-message-dots' ></i></span>
+                    <span class="title">Message</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggel" onclick="toggelMenu()"></div>
+    <script class="text/javascript">
+    function toggelMenu(){
+        let navigation = document.querySelector('.navigation');
+        let toggel = document.querySelector('.toggel');
+        navigation.classList.toggle('active');
+        toggel.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
